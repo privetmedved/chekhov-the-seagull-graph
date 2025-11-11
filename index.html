@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой сетевой анализ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .graph-image {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .metrics {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анализ графа персонажей</h1>
+    <p>Лабораторная работа по сетевому анализу</p>
+    
+    <h2>Визуализация графа</h2>
+    <img src="network.png" alt="Граф взаимодействия персонажей" class="graph-image">
+    
+    <div class="metrics">
+        <h2>Характеристики графа</h2>
+        <ul>
+            <li><strong>Количество узлов (персонажей):</strong> 12</li>
+            <li><strong>Количество рёбер (взаимодействий):</strong> 52</li>
+            <li><strong>Плотность графа:</strong> 0.788</li>
+            <li><strong>Диаметр сети:</strong> 2</li>
+        </ul>
+    </div>
+    
+    <h2>Ответы на вопросы лабораторной</h2>
+    
+    <h3>1. Характеристики графа</h3>
+    <p>Граф состоит из 12 персонажей, связанных 52 взаимодействиями. Высокая плотность (0.788) указывает на тесные связи между персонажами.</p>
+    
+    <h3>2. Преобладающий пол</h3>
+    <p>В произведении преобладают мужские персонажи (7 мужчин, 5 женщин).</p>
+    
+    <h3>3. Количество сказанных слов</h3>
+    <p>Наибольшее количество реплик у Нины, наименьшее - у Якова.</p>
+    
+    <h3>4. Количество контактов</h3>
+    <p>Наибольшее число связей у Тригорина, наименьшее - у Медведенко.</p>
+    
+    <h3>5. Неочевидные связи</h3>
+    <p>Маша выступает в роли "мостика" между двумя группами персонажей.</p>
+    
+    <h3>6. Меры центральности</h3>
+    <table>
+        <tr>
+            <th>Персонаж</th>
+            <th>Degree</th>
+            <th>Betweenness</th>
+            <th>Closeness</th>
+        </tr>
+        <tr>
+            <td>Нина</td>
+            <td>8</td>
+            <td>0.45</td>
+            <td>0.85</td>
+        </tr>
+        <tr>
+            <td>Тригорин</td>
+            <td>7</td>
+            <td>0.38</td>
+            <td>0.78</td>
+        </tr>
+        <tr>
+            <td>Аркадина</td>
+            <td>6</td>
+            <td>0.32</td>
+            <td>0.75</td>
+        </tr>
+    </table>
+    
+    <div style="margin-top: 40px; padding: 20px; background: #e8f4fd; border-radius: 5px;">
+        <p><strong>Примечание:</strong> Данные приведены в качестве примера. Замените на реальные данные из вашего анализа в Cytoscape.</p>
+    </div>
+</body>
+</html>
